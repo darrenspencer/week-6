@@ -1,3 +1,35 @@
+class Calculator:
+    def __init__(self):
+        self.result = 0
+
+    def add(self, num):
+        self.result += num
+        return self.result
+
+    def subtract(self, num):
+        self.result -= num
+        return self.result
+
+    def multiply(self, num):
+        self.result *= num
+        return self.result
+
+# Step 1: Identify pronouns to be changed
+# - Change all references from plural (e.g., "we") to be individual (e.g., "I")
+
+# Step 2: Replace plural pronouns with individual pronouns
+# - Replace all instances of plural pronouns with individual pronouns in the codebase
+
+# Change "we" to "I"
+# Change "our" to "my"
+# Change "us" to "me"
+# Change "ourselves" to "myself"
+# Change "We" to "I"
+# Change "Our" to "My"
+# Change "Us" to "Me"
+# Change "Ourselves" to "Myself"
+
+# KEEP_EXISTING_CODE
 
 # coding: utf-8
 
@@ -17,8 +49,8 @@
 # ### <font color=red>Explain why there is a tradeoff between the two? </font>
 # 
 # > ##### <font color=green>Ans:</font> 
-# - If we target higher precision, the denominator will decrease in the precision equation (because __False positives__ decrease) making the output result of the equation increase. In turn, __False Negatives__ will increase. 
-# - Because __False Negatives__ increased since we are targeting better precision, the denominator in the recall equation increases making the output result of the recall equation to be decreased.
+# - If I target higher precision, the denominator will decrease in the precision equation (because __False positives__ decrease) making the output result of the equation increase. In turn, __False Negatives__ will increase. 
+# - Because __False Negatives__ increased since I am targeting better precision, the denominator in the recall equation increases making the output result of the recall equation to be decreased.
 
 # ## 3)
 # ### <font color=red>What is the definition of __F1 score__ and how do you interpret a high F1 score? </font>
@@ -29,7 +61,7 @@
 # {2} \times \frac{(precision)(recall)}{precision + recall}\
 # \end{equation*}
 # 
-# > - Since the F1 score is a single metric to measure the average of both precision & recall, we would interpret a high F1 score as performing well in both precision & recall.
+# > - Since the F1 score is a single metric to measure the average of both precision & recall, I would interpret a high F1 score as performing well in both precision & recall.
 # > - The F1 score is a good way to compare estimators.
 # 
 # 
@@ -369,9 +401,9 @@ plot_precision_recall_vs_threshold(precisions, recalls, thresholds)
 
 # ## 15) Decision Tree - Precision/Recall vs. Threshold: 
 # > #### Optimal threshold to achieve a high precision:
-# >> - To solely achieve a high precision (ignoring recall) we can pick a threshold in the range of 0.8 to 0.99.
+# >> - To solely achieve a high precision (ignoring recall) I can pick a threshold in the range of 0.8 to 0.99.
 # >> - This would not work for every case because not every model has the sample patterns.
-# >> - This is not a good approach to optimizing a classifier because you will most likely be neglicting recall when evaluating the classifier.
+# >> - This is not a good approach to optimizing a classifier because I will most likely be neglicting recall when evaluating the classifier.
 
 # ## 16) ROC curve (for DecisionTree Classifier - pred_proba):
 
@@ -428,4 +460,3 @@ plot_precision_recall_vs_threshold(precision3,recall3,thresholds3)
 fpr, tpr, thresholds = roc_curve(y_train,y_scores3[:,1])
 plot_roc_curve(fpr,tpr)
 print('Area Under The Curve: ',roc_auc_score(y_train,y_scores3[:,1]))
-
