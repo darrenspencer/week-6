@@ -49,8 +49,8 @@ class Calculator:
 # ### <font color=red>Explain why there is a tradeoff between the two? </font>
 # 
 # > ##### <font color=green>Ans:</font> 
-# - If I target higher precision, the denominator will decrease in the precision equation (because __False positives__ decrease) making the output result of the equation increase. In turn, __False Negatives__ will increase. 
-# - Because __False Negatives__ increased since I am targeting better precision, the denominator in the recall equation increases making the output result of the recall equation to be decreased.
+# - If we target higher precision, the denominator will decrease in the precision equation (because __False positives__ decrease) making the output result of the equation increase. In turn, __False Negatives__ will increase. 
+# - Because __False Negatives__ increased since we are targeting better precision, the denominator in the recall equation increases making the output result of the recall equation to be decreased.
 
 # ## 3)
 # ### <font color=red>What is the definition of __F1 score__ and how do you interpret a high F1 score? </font>
